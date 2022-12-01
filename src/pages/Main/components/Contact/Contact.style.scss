@@ -1,0 +1,31 @@
+.contact {
+  &--container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    gap: 2em;
+    & > a > svg {
+      max-height: 30px;
+      cursor: pointer;
+      &:hover {
+        &[id='twitter-icon'] {
+          fill: #2aa4f4;
+        }
+        &[id='github-icon'] > path:nth-child(1) {
+          fill: #ccc;
+        }
+        &[id='linkedin-icon'] {
+          fill: #0078d4;
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      background-color: #111;
+    }
+  }
+}

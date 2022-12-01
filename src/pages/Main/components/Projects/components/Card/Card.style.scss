@@ -1,0 +1,39 @@
+.card {
+  &--container {
+    position: relative;
+    background-color: red;
+    height: 40px;
+    width: 20%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    background: var(--theme-dark-linear-gray);
+    box-shadow: 0.4px 0.4px 5px rgba(200, 0, 0, 0.5);
+    font-size: 12px;
+    & > div {
+      flex-flow: row wrap;
+    }
+    cursor: pointer;
+    :nth-child(3) {
+      display: none;
+    }
+    &:hover {
+      transition: box-shadow 0.5s ease-in-out;
+      box-shadow: 1.3px 1.4px 10px rgba(200, 0, 0, 1);
+    }
+    @media screen and (max-width: 500px) {
+      width: 40%;
+    }
+  }
+  &--lang-container {
+    display: flex;
+    gap: 0.5em;
+    position: absolute;
+    bottom: 0px;
+    right: 2px;
+  }
+  &--lang-tag > img {
+    height: 13px;
+  }
+}

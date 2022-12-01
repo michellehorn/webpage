@@ -1,0 +1,24 @@
+.nav-bar--container {
+  & > ul {
+    display: flex;
+    justify-content: center;
+    & > li {
+      color: white;
+      margin: 1em;
+      list-style: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  @media screen and (max-width: 500px) {
+    background-color: #111;
+  }
+}

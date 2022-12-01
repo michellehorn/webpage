@@ -1,0 +1,18 @@
+.about-me--container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  width: 80%;
+  padding-left: 4em;
+  & > p {
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 1.5em;
+    width: 90%;
+    height: 700px;
+  }
+}
