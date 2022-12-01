@@ -14,7 +14,7 @@ const Contact = () => {
     },
     {
       title: 'Twitter',
-      link: 'https://twitter.com/devichellehorn',
+      link: 'https://twitter.com/devmichellehorn',
       icon: <TwitterIcon />
     },
     {

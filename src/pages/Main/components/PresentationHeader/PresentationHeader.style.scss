@@ -10,6 +10,7 @@
     }
   }
   &--carbon-code {
+    margin-top: 3em;
     height: 330px;
     border-radius: 8px;
     box-shadow: 2px 1px 50px rgba(2, 2, 2, 1);
@@ -24,11 +25,13 @@
   }
 
   &--arms-closed-image {
-    max-height: 90%;
-    position: absolute;
+    position: fixed;
+    max-height: 92%;
     z-index: 1000;
     bottom: 0;
     right: 10px;
+    right: 0;
+    bottom: 0;
     opacity: 0.7;
     filter: drop-shadow(2px 2px 10px gray);
     &:hover {
